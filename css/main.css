@@ -1,0 +1,776 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: Microsoft JhengHei;
+  min-width: 1000px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  color: #1f1f1f;
+  font-size: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input {
+  outline: 0;
+  border: 0;
+  border-radius: 0; }
+
+html {
+  font-size: 16px; }
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 25px; } }
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 40px; } }
+
+@-webkit-keyframes downarrow {
+  0% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  25% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  50% {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%); }
+  75% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); } }
+
+@keyframes downarrow {
+  0% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  25% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  50% {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%); }
+  75% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); } }
+
+@-webkit-keyframes action {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
+
+@keyframes action {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
+
+@-webkit-keyframes action1 {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes action1 {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(-20deg) scale(1);
+    transform: rotate(-20deg) scale(1); }
+  25% {
+    -webkit-transform: rotate(20deg) scale(1.2);
+    transform: rotate(20deg) scale(1.2); }
+  50% {
+    -webkit-transform: rotate(-20deg) scale(1.2);
+    transform: rotate(-20deg) scale(1.2); }
+  75% {
+    -webkit-transform: rotate(20deg) scale(1.2);
+    transform: rotate(20deg) scale(1.2); }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1); } }
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(-20deg) scale(1);
+    transform: rotate(-20deg) scale(1); }
+  25% {
+    -webkit-transform: rotate(20deg) scale(1.2);
+    transform: rotate(20deg) scale(1.2); }
+  50% {
+    -webkit-transform: rotate(-20deg) scale(1.2);
+    transform: rotate(-20deg) scale(1.2); }
+  75% {
+    -webkit-transform: rotate(20deg) scale(1.2);
+    transform: rotate(20deg) scale(1.2); }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1); } }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0; }
+
+header {
+  height: 100vh;
+  background: url(../img/Ocean.jpg) no-repeat center;
+  background-size: cover;
+  overflow: hidden; }
+  header h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    text-shadow: 5px 5px 10px #000;
+    cursor: pointer;
+    margin: 24% auto 0 auto; }
+    header h4:hover {
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      font-size: 2.2rem; }
+  header .icon-a {
+    width: 100%;
+    text-align: center;
+    margin: 3% auto; }
+    header .icon-a .icon {
+      width: 5%;
+      padding-bottom: 5%;
+      margin: 2%;
+      display: inline-block;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+      header .icon-a .icon.icon-fb {
+        background: url(../img/fb.png) no-repeat;
+        background-size: 100%; }
+        header .icon-a .icon.icon-fb:hover {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s;
+          background-color: #4267B2;
+          border-radius: 50%; }
+      header .icon-a .icon.icon-ig {
+        background: url(../img/ig.png) no-repeat;
+        background-size: 100%; }
+        header .icon-a .icon.icon-ig:hover {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s;
+          background-color: #d047d1;
+          border-radius: 50%; }
+      header .icon-a .icon.icon-github {
+        background: url(../img/github.png) no-repeat;
+        background-size: 100%; }
+        header .icon-a .icon.icon-github:hover {
+          -webkit-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s;
+          background-color: #6A2A87;
+          border-radius: 50%; }
+  header .downarrow {
+    display: block;
+    background: url(../img/down.png) no-repeat;
+    background-size: 100%;
+    padding-bottom: 5%;
+    width: 5%;
+    margin: 8% auto 0 auto;
+    cursor: pointer;
+    -webkit-animation-name: downarrow;
+    animation-name: downarrow;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear; }
+
+nav {
+  width: 100%;
+  background: #c3c3c3;
+  top: 0; }
+  nav.fixed {
+    position: fixed;
+    z-index: 998; }
+  nav .container {
+    width: 80%;
+    font-size: 0; }
+    nav .container .home {
+      background: url(../img/home.png) no-repeat;
+      width: 3%;
+      padding-bottom: 3%;
+      background-size: 100%;
+      margin-left: 1%;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s; }
+      nav .container .home:hover {
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s; }
+    nav .container .nav-menu {
+      display: inline-block;
+      text-align: right;
+      width: 96%;
+      vertical-align: middle; }
+      nav .container .nav-menu li {
+        position: relative;
+        display: inline-block;
+        font-weight: bold;
+        width: 13%;
+        text-align: center;
+        padding: 2% 0;
+        border-bottom: 4px solid rgba(255, 255, 255, 0);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        nav .container .nav-menu li a {
+          display: block; }
+          nav .container .nav-menu li a:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 0.6rem;
+            color: #1f1f1f;
+            z-index: 999; }
+          nav .container .nav-menu li a.nav-menu-a:before {
+            content: 'PORTFOLIO'; }
+          nav .container .nav-menu li a.nav-menu-b:before {
+            content: 'SKILLS'; }
+          nav .container .nav-menu li a.nav-menu-c:before {
+            content: 'PROFILE'; }
+          nav .container .nav-menu li a.nav-menu-d:before {
+            content: 'EXPERIENCE'; }
+        nav .container .nav-menu li:hover {
+          border-bottom: 4px solid #0D68BE;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+          nav .container .nav-menu li:hover:before {
+            color: #0D68BE; }
+
+.person {
+  height: 100vh; }
+
+h4 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 6%; }
+
+.portfolio {
+  background: #fff; }
+  .portfolio.fixed {
+    padding-top: 63px; }
+  .portfolio .demo li {
+    position: relative;
+    width: 31.33333%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1% 1%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden; }
+    .portfolio .demo li:after {
+      opacity: 0;
+      position: absolute;
+      left: 50%;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      content: '';
+      -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+      transform: translate(-50%, 50%);
+      font-size: 0.8rem;
+      color: #fff; }
+    .portfolio .demo li:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+      .portfolio .demo li:hover:after {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -400%);
+        -ms-transform: translate(-50%, -400%);
+        transform: translate(-50%, -400%); }
+    .portfolio .demo li a {
+      display: block;
+      padding-bottom: 50%;
+      text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      border-radius: 5px; }
+    .portfolio .demo li.demo1 a {
+      background: url(../img/1.png) no-repeat center;
+      background-size: 100%; }
+    .portfolio .demo li.demo1:after {
+      content: 'Blizzard 毛玻璃'; }
+    .portfolio .demo li.demo2 a {
+      background: url(../img/2.png) no-repeat center;
+      background-size: 100%; }
+    .portfolio .demo li.demo2:after {
+      content: '登入頁 DEMO'; }
+    .portfolio .demo li.demo3 a {
+      background: url(../img/3.png) no-repeat center;
+      background-size: 100%; }
+    .portfolio .demo li.demo3:after {
+      content: '旅遊網站 DEMO'; }
+    .portfolio .demo li.demo4 a {
+      background: url(../img/4.png) no-repeat center;
+      background-size: 130%; }
+    .portfolio .demo li.demo4:after {
+      content: '手機版登入頁'; }
+    .portfolio .demo li.demo5 a {
+      background: url(../img/5.png) no-repeat center;
+      background-size: 100%; }
+    .portfolio .demo li.demo5:after {
+      content: '履歷 DEMO'; }
+    .portfolio .demo li.demo6 a {
+      background: url(../img/6.png) no-repeat center;
+      background-size: 100%; }
+    .portfolio .demo li.demo6:after {
+      content: '扭蛋 DEMO'; }
+
+.skill {
+  background: #F2F2F2; }
+  .skill.fixed {
+    padding-top: 63px; }
+  .skill ul p {
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center; }
+  .skill ul li {
+    width: 50%;
+    display: inline-block;
+    text-align: center; }
+    .skill ul li.web_area {
+      position: relative;
+      padding-bottom: 35%; }
+      .skill ul li.web_area .html5, .skill ul li.web_area .css3, .skill ul li.web_area .jquery, .skill ul li.web_area .sass, .skill ul li.web_area .github {
+        position: absolute;
+        width: 20%;
+        padding-bottom: 20%;
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        opacity: 0.6;
+        -webkit-animation-name: action1;
+        animation-name: action1;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer; }
+        .skill ul li.web_area .html5.html5, .skill ul li.web_area .css3.html5, .skill ul li.web_area .jquery.html5, .skill ul li.web_area .sass.html5, .skill ul li.web_area .github.html5 {
+          top: 0;
+          left: 50%;
+          margin-top: 10%;
+          -webkit-transform: rotate(0deg) translateX(-50%) scale(1);
+          -ms-transform: rotate(0deg) translateX(-50%) scale(1);
+          transform: rotate(0deg) translateX(-50%) scale(1);
+          background: url(../img/html5.png) no-repeat center;
+          background-size: 80%; }
+        .skill ul li.web_area .html5.css3, .skill ul li.web_area .css3.css3, .skill ul li.web_area .jquery.css3, .skill ul li.web_area .sass.css3, .skill ul li.web_area .github.css3 {
+          top: 0;
+          left: 20%;
+          margin-top: 25%;
+          background: url(../img/css3.png) no-repeat center;
+          background-size: 80%; }
+        .skill ul li.web_area .html5.jquery, .skill ul li.web_area .css3.jquery, .skill ul li.web_area .jquery.jquery, .skill ul li.web_area .sass.jquery, .skill ul li.web_area .github.jquery {
+          top: 0;
+          left: 30%;
+          margin-top: 45%;
+          background: url(../img/jquery.png) no-repeat center;
+          background-size: 80%; }
+        .skill ul li.web_area .html5.sass, .skill ul li.web_area .css3.sass, .skill ul li.web_area .jquery.sass, .skill ul li.web_area .sass.sass, .skill ul li.web_area .github.sass {
+          top: 0;
+          right: 30%;
+          margin-top: 45%;
+          background: url(../img/sass.png) no-repeat center;
+          background-size: 80%; }
+        .skill ul li.web_area .html5.github, .skill ul li.web_area .css3.github, .skill ul li.web_area .jquery.github, .skill ul li.web_area .sass.github, .skill ul li.web_area .github.github {
+          top: 0;
+          right: 20%;
+          margin-top: 25%;
+          background: url(../img/github-1.png) no-repeat center;
+          background-size: 80%; }
+      .skill ul li.web_area:hover .html5, .skill ul li.web_area:hover .css3, .skill ul li.web_area:hover .jquery, .skill ul li.web_area:hover .sass, .skill ul li.web_area:hover .github {
+        opacity: 1;
+        -webkit-transform: rotate(720deg) scale(1.2);
+        -ms-transform: rotate(720deg) scale(1.2);
+        transform: rotate(720deg) scale(1.2); }
+        .skill ul li.web_area:hover .html5.html5, .skill ul li.web_area:hover .css3.html5, .skill ul li.web_area:hover .jquery.html5, .skill ul li.web_area:hover .sass.html5, .skill ul li.web_area:hover .github.html5 {
+          -webkit-transform: rotate(720deg) translateX(-50%) scale(1.2);
+          -ms-transform: rotate(720deg) translateX(-50%) scale(1.2);
+          transform: rotate(720deg) translateX(-50%) scale(1.2); }
+        .skill ul li.web_area:hover .html5.css3, .skill ul li.web_area:hover .css3.css3, .skill ul li.web_area:hover .jquery.css3, .skill ul li.web_area:hover .sass.css3, .skill ul li.web_area:hover .github.css3 {
+          left: 15%; }
+        .skill ul li.web_area:hover .html5.github, .skill ul li.web_area:hover .css3.github, .skill ul li.web_area:hover .jquery.github, .skill ul li.web_area:hover .sass.github, .skill ul li.web_area:hover .github.github {
+          right: 15%; }
+        .skill ul li.web_area:hover .html5.sass, .skill ul li.web_area:hover .css3.sass, .skill ul li.web_area:hover .jquery.sass, .skill ul li.web_area:hover .sass.sass, .skill ul li.web_area:hover .github.sass {
+          right: 25%;
+          margin-top: 50%; }
+        .skill ul li.web_area:hover .html5.jquery, .skill ul li.web_area:hover .css3.jquery, .skill ul li.web_area:hover .jquery.jquery, .skill ul li.web_area:hover .sass.jquery, .skill ul li.web_area:hover .github.jquery {
+          left: 25%;
+          margin-top: 50%; }
+    .skill ul li.office_area {
+      position: relative;
+      padding-bottom: 35%; }
+      .skill ul li.office_area .word, .skill ul li.office_area .excel, .skill ul li.office_area .ppt {
+        position: absolute;
+        width: 21%;
+        padding-bottom: 21%;
+        display: inline-block;
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        opacity: 0.6;
+        -webkit-animation-name: action;
+        animation-name: action;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer; }
+        .skill ul li.office_area .word.word, .skill ul li.office_area .excel.word, .skill ul li.office_area .ppt.word {
+          background: url(../img/word.png) no-repeat center;
+          background-size: 80%;
+          top: 0;
+          margin-top: 15%;
+          left: 50%;
+          -webkit-transform: rotate(0deg) translateX(-50%) scale(1);
+          -ms-transform: rotate(0deg) translateX(-50%) scale(1);
+          transform: rotate(0deg) translateX(-50%) scale(1); }
+        .skill ul li.office_area .word.excel, .skill ul li.office_area .excel.excel, .skill ul li.office_area .ppt.excel {
+          background: url(../img/excel.png) no-repeat center;
+          background-size: 80%;
+          top: 0;
+          margin-top: 35%;
+          left: 25%; }
+        .skill ul li.office_area .word.ppt, .skill ul li.office_area .excel.ppt, .skill ul li.office_area .ppt.ppt {
+          background: url(../img/powerpoint.png) no-repeat center;
+          background-size: 80%;
+          top: 0;
+          margin-top: 35%;
+          right: 25%; }
+      .skill ul li.office_area:hover .word, .skill ul li.office_area:hover .excel, .skill ul li.office_area:hover .ppt {
+        opacity: 1;
+        -webkit-transform: rotate(720deg) scale(1.2);
+        -ms-transform: rotate(720deg) scale(1.2);
+        transform: rotate(720deg) scale(1.2); }
+        .skill ul li.office_area:hover .word.word, .skill ul li.office_area:hover .excel.word, .skill ul li.office_area:hover .ppt.word {
+          -webkit-transform: rotate(720deg) translateX(-50%) scale(1.2);
+          -ms-transform: rotate(720deg) translateX(-50%) scale(1.2);
+          transform: rotate(720deg) translateX(-50%) scale(1.2); }
+        .skill ul li.office_area:hover .word.excel, .skill ul li.office_area:hover .excel.excel, .skill ul li.office_area:hover .ppt.excel {
+          margin-top: 40%;
+          left: 15%; }
+        .skill ul li.office_area:hover .word.ppt, .skill ul li.office_area:hover .excel.ppt, .skill ul li.office_area:hover .ppt.ppt {
+          margin-top: 40%;
+          right: 15%; }
+
+.profile {
+  background: #fff; }
+  .profile.fixed {
+    padding-top: 63px; }
+  .profile .capital {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1% 4% 1% 6%; }
+    .profile .capital .photo {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 20px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer; }
+      .profile .capital .photo .photobackgroud {
+        padding-bottom: 80%;
+        background: url(../img/photo.jpg) no-repeat center;
+        background-size: cover;
+        background-color: #fff;
+        border-radius: 20px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .profile .capital .photo:hover .photobackgroud {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0.8; }
+    .profile .capital .imformation {
+      width: 100%; }
+      .profile .capital .imformation p {
+        font-size: 0.6rem;
+        margin: 4% 0;
+        font-weight: 500; }
+        .profile .capital .imformation p span {
+          font-weight: 700; }
+  .profile .content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top; }
+    .profile .content p {
+      font-size: 0.45rem;
+      margin: 2% 1%;
+      line-height: 0.6rem; }
+      .profile .content p span {
+        font-size: 0.75rem;
+        font-weight: bold; }
+
+.experience {
+  background-color: #F2F2F2; }
+  .experience.fixed {
+    padding-top: 63px; }
+  .experience .container {
+    width: 90%; }
+    .experience .container ul {
+      margin: 1% 0; }
+      .experience .container ul > li {
+        width: 23%;
+        display: inline-block;
+        margin-left: 1%;
+        background-color: #e4e4e4;
+        padding: 1%;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        cursor: pointer; }
+        .experience .container ul > li:hover {
+          -webkit-transform: translate(0%, -10%) scale(1.1);
+          -ms-transform: translate(0%, -10%) scale(1.1);
+          transform: translate(0%, -10%) scale(1.1);
+          -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          background-color: #fff; }
+        .experience .container ul > li:last-child {
+          margin-right: 1%; }
+        .experience .container ul > li ol {
+          width: 100%;
+          text-align: left;
+          display: inline-block;
+          vertical-align: top; }
+          .experience .container ul > li ol li {
+            width: 100%;
+            vertical-align: top;
+            margin-bottom: 5%; }
+            .experience .container ul > li ol li.title p {
+              font-size: 0.85rem; }
+            .experience .container ul > li ol li .icon {
+              display: inline-block;
+              vertical-align: middle;
+              width: 20%;
+              margin-right: 5%; }
+              .experience .container ul > li ol li .icon.shake {
+                -webkit-animation-name: shake;
+                animation-name: shake;
+                -webkit-animation-duration: 1.2s;
+                animation-duration: 1.2s;
+                -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1; }
+            .experience .container ul > li ol li p {
+              display: inline-block;
+              vertical-align: middle;
+              width: 75%;
+              font-size: 0.45rem;
+              line-height: 0.75rem; }
+              .experience .container ul > li ol li p span {
+                font-size: 0.35rem; }
+          .experience .container ul > li ol.education .title .icon {
+            background: url(../img/education.png) no-repeat center;
+            background-size: 100%;
+            padding-bottom: 20%; }
+          .experience .container ul > li ol.experienced .title .icon {
+            background: url(../img/experience.png) no-repeat center;
+            background-size: 100%;
+            padding-bottom: 20%; }
+          .experience .container ul > li ol.license .title .icon {
+            background: url(../img/license.png) no-repeat center;
+            background-size: 100%;
+            padding-bottom: 20%; }
+          .experience .container ul > li ol.interest .title .icon {
+            background: url(../img/star.png) no-repeat center;
+            background-size: 100%;
+            padding-bottom: 20%; }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%; }
+  header {
+    height: 100%; }
+    header h4 {
+      font-size: 4rem; }
+    header .icon-a .icon {
+      width: 7%;
+      padding-bottom: 7%; }
+    header .downarrow {
+      margin: 5% auto 3% auto; }
+  nav .container {
+    width: 100%; }
+    nav .container .home {
+      width: 8%;
+      padding-bottom: 8%; }
+    nav .container .nav-menu {
+      width: 90%; }
+      nav .container .nav-menu li {
+        width: 22%;
+        padding: 4% 0; }
+        nav .container .nav-menu li a:before {
+          font-size: 1.8rem; }
+  .person {
+    height: 100%; }
+  h4 {
+    font-size: 4rem; }
+  .portfolio .demo li {
+    width: 90%;
+    display: block;
+    margin: 5% 5%; }
+  .skill ul li {
+    width: 100%;
+    display: block; }
+    .skill ul li p {
+      font-size: 2.6rem; }
+    .skill ul li.web_area {
+      padding-bottom: 70%; }
+    .skill ul li.office_area {
+      padding-bottom: 65%; }
+  .profile .capital {
+    width: 90%;
+    display: block;
+    margin: 1% 5%; }
+    .profile .capital .imformation {
+      width: 65%;
+      text-align: center;
+      margin: 0 auto; }
+      .profile .capital .imformation p {
+        font-size: 2rem;
+        margin: 4% 0; }
+  .profile .content {
+    width: 90%;
+    display: block;
+    margin: 0 auto; }
+    .profile .content p {
+      font-size: 2.3rem;
+      line-height: 3.3rem; }
+      .profile .content p span {
+        font-size: 3.3rem; }
+  .experience .container {
+    width: 100%; }
+    .experience .container ul > li {
+      width: 85%;
+      display: block;
+      margin: 2% auto; }
+      .experience .container ul > li:last-child {
+        margin: 2% auto; }
+      .experience .container ul > li ol {
+        display: block; }
+        .experience .container ul > li ol li.title p {
+          font-size: 3rem; }
+        .experience .container ul > li ol li p {
+          font-size: 2.6rem;
+          line-height: 4rem; }
+          .experience .container ul > li ol li p span {
+            font-size: 1.6rem; } }
